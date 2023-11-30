@@ -1,0 +1,100 @@
+#slideshow {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#img-slider {
+	width: 100%;
+}
+
+#img-slider img {
+	width: 100%;
+    display: none;
+}
+
+#img-slider img:nth-child(1) {
+    display: block;
+}
+
+#slideshow button {
+	width: 30px;
+	height: 30px;
+	background: none;
+	border: solid black 1px;
+	border-radius: 25px;
+	font-size: 20px;
+	color: black;
+	cursor: pointer;
+	outline: none;
+    transition: all 0.1s ease-in-out;
+}
+
+#slideshow button:hover {
+	transform: scale(1.05);
+}
+
+#slideshow button:active {
+    transform: scale(0.95);
+
+}
+
+#img-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 10px;
+}
+
+.sito-container {
+	padding:0 20px;
+}
+#img-slider-edita {
+	width: 100%;
+}
+
+#img-slider-edita img {
+	width:100%;
+    display: none;
+}
+
+#img-slider-edita img:nth-child(1) {
+    display: block;
+}
+
+div .btn-edita {
+	width: 30px;
+	height: 30px;
+	background: none;
+	border: solid #C8133E 1px;
+	border-radius: 25px;
+	font-size: 20px;
+	color: #C8133E;
+	cursor: pointer;
+	outline: none;
+    transition: all 0.1s ease-in-out;
+}
+
+#slideshow-edita button:hover {
+	transform: scale(1.05);
+}
+
+#slideshow-edita button:active {
+    transform: scale(0.95);
+
+}
+
+.link-siti-hotel {
+	color:#C8133E;
+	padding: 10px;
+}
+
+.link-siti-hotel:hover{
+	background-color: #C8133E;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+}
+
