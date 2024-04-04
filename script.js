@@ -26,4 +26,3 @@ function prec(){
 }
 
 setInterval(succ, 5000);
-
