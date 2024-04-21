@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#mobile, #email {
+	text-decoration: none;
+	color: black;
+}
+
+#mobile:hover, #email:hover {
+	color: #C8133E;
+}
+
+
+/* SEZIONE SKILLS*/
+
+.skills {
+	width: 100%;
+	padding: 0 20px;
+}
+
+.skill-name {
+	font-size: 14px;
+	text-align: left;
+	font-weight: 400;
+	color: black;
+	text-transform: uppercase;
+	margin: 12px 0;
+}
+
+.skill-bar {
+	height: 10px;
+	background-color: #505050;
+	border-radius: 3px;
+}
+
+.skill-per {
+	height: 10px;
+	background: #C8133E;
+	border-radius: 3px;
+	position: relative;
+	animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+	content:attr(per);
+	position: absolute;
+	padding: 4px 6px;
+	background-color: #C8133E;
+	color: white;
+	border-radius: 4px;
+	font-size: 10px;
+	top: -35px;
+	right: 0;
+	transform: translateX(50%);
+}
+
+.skill-per::after{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #C8133E;
+	top: -18px;
+	right: 0;
+	transform: translateX(50%) rotate(45deg);
+	border-radius: 2px;
+}
+
+@keyframes fillBars {
+	from{
+		width: 0;
+	}
+	to{
+		width: 100%;
+	}
+}
+
+
+/*SEZIONE TIMELINE*/
+
+.timeline ul{
+	padding: 20px 0;
+}
+
+/* linea timeline */
+.timeline ul li{
+	list-style: none;
+	position: relative;
+	width: 6px;
+	margin: 0 auto;
+	padding-top: 20px;
+	background: #C8133E;
+}
+
+.timeline ul li div{
+	position: relative;
+	bottom: 0;
+	width: 400px;
+	color: white;
+	text-align: left;
+	padding: 1rem;
+	background: #C8133E;
+	transition: all 0.5s ease-in-out;
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0.5);
+}
+
+/* stile parte destra timeline*/
+.timeline ul li:nth-child(odd) div {
+	left: 40px;
+}
+
+/* stile parte sinistra timeline*/
+.timeline ul li:nth-child(even) div{
+	left: -434px;
+}
+
+
+/* stile pallini */
+.timeline ul li::after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	width: 20px;
+	height: 20px;
+	background: #C8133E;
+	transform: translateX(-50%);
+	border-radius: 50%;
+}
+
+
+/* stile sezione esperienze lavorative*/
+.job{
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+	border-bottom: 1px solid black;
+}
+
+.job:last-child {
+	border-bottom: none;
+}
+
+.job-title-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	font-size: 16px;
+	text-align: left;
+}
+
+.job-company {
+	font-weight: bold;
+	line-height: 1.2;
+	color: #C8133E;
+}
+
+.job-title {
+	font-style: italic;
+	font-size: 14px;
+}
+
+.job-time{
+	font-size: 14px;
+	color:#C8133E;
+}
+
+#job-description {
+	text-align: left;
+}
+
+
+@media (max-width: 900px) {
+	.timeline ul li div {
+		width: 350px;
+	}
+
+	.timeline ul li:nth-child(odd) div {
+		left: 40px;
+	}
+
+	.timeline ul li:nth-child(even) div{
+		left: -380px;
+	}
+}
+
+@media (max-width: 768px) {
+	/* modifiche linea timeline*/
+	.timeline ul li{
+		margin-left: 30px;
+	}
+
+	/* modifiche grandezza box */
+	.timeline ul li div {
+		width: calc(100vw - 90px);
+	}
+	
+	/*modifiche box sinistra*/
+	.timeline ul li:nth-child(even) div{
+		left: 40px;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	.job {
+		margin: 0 20px;
+		padding-top: 20px;
+	}
+}
