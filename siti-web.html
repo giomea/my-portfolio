@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="./assets/css/style-index.css">
     <link rel="stylesheet" href="./assets/css/style-siti-web.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./script.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <link rel="icon" href="./assets/img/favicon.png" type=”image/png”>
   </head>
   <body>
   
   <header>
-    <div class="container">
       <div class="d-flex justify-content-center py-3">
           <ul class="nav nav-pills">
               <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
@@ -30,10 +30,6 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="siti-web.html">Siti web</a></li>
-                      <li><a class="dropdown-item" href="scrittura.html">Scrittura</a></li>
-                      <li><a class="dropdown-item" href="grafiche.html">Grafiche</a></li>
-                      <li><a class="dropdown-item" href="social-newsletter.html">Social e Newsletter</a></li>
-                      <li><a class="dropdown-item" href="campagne-html">Campagne pubblicitarie</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="portfolio.html">Tutti i progetti </a></li>
                   </ul>
@@ -41,21 +37,22 @@
               <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
           <ul class="nav nav-icon">
-            <li><a href="https://www.linkedin.com/in/giorgia-mea-8906b2166/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-            <li><a href="https://www.instagram.com/giomea/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/giorgia-mea-8906b2166/" rel="noopener" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="https://www.instagram.com/giomea/" rel="noopener" target="_blank"><i class="fa fa-instagram"></i></a></li>
           </ul>
+        </div>
       </header>
-    </div>
+    
 
     <div id="slideshow">
         <button onclick="prec()"><</button>
         <div id="img-slider">
-            <img src="./assets/img/hotel-savini.jpg">
-            <img src="./assets/img/hotel-letorri.jpg">
-            <img src="./assets/img/hotel-puntaest.jpg">
-            <img src="./assets/img/glielementi.jpg">
-            <img src="./assets/img/diegodallapalma.jpg">
-            <img src="./assets/img/impresaediledavideprotti.jpg">
+            <img src="./assets/img/hotel-savini.jpg" alt="screenshot della home page del sito dell'Hotel Savini di Bellaria, Rimini">
+            <img src="./assets/img/hotel-letorri.jpg" alt="screenshot della home page del sito dell'Albergo Le Torri di Castiglione Falletto, Cuneo">
+            <img src="./assets/img/hotel-puntaest.jpg" alt="screenshot della home page del sito dell'Hotel Punta Est di Baja Sardinia">
+            <img src="./assets/img/glielementi.jpg" alt="screenshot della home page del sito dell'azienda Gli Elementi, brand di prodotti di cosmesi totalmente naturali">
+            <img src="./assets/img/diegodallapalma.jpg" alt="screenshot della home page del sito del brand Diego Dalla Palma, brand di prodotti di make up">
+            <img src="./assets/img/impresaediledavideprotti.jpg" alt="screenshot della home page del sito dell'impresa edile Davide Protti di Rimini">
 
         </div>
         <button onclick="succ()">></button>
@@ -77,14 +74,14 @@
                 elemento sia intuitivo e coinvolgente. Lavoriamo per 
                 creare un viaggio senza intoppi, dalla homepage alle pagine più nascoste.<br><br>
 
-                Alcuni esempi: <a class="link-siti-hotel" href="https://www.letorri-hotel.com/" target="_blank">letorri-hotel.com</a> - 
-                <a class="link-siti-hotel" href="https://www.hotelpuntaest.it/" target="_blank">hotelpuntaest.it</a> - 
-                <a class="link-siti-hotel" href="https://www.hotelsavini.it/" target="_blank">hotelsavini.it</a>
+                Alcuni esempi: <a class="link-siti-hotel" href="https://www.letorri-hotel.com/" rel="noopener" target="_blank">letorri-hotel.com</a> - 
+                <a class="link-siti-hotel" href="https://www.hotelpuntaest.it/" rel="noopener" target="_blank">hotelpuntaest.it</a> - 
+                <a class="link-siti-hotel" href="https://www.hotelsavini.it/" rel="noopener" target="_blank">hotelsavini.it</a>
             </p>
           </div>
           <div class="col-md-6">
                 <div id="img-responsive">
-                    <img src="./assets/img/hotel-letorri660x355.jpg" style="width: 100%;">
+                    <img src="./assets/img/hotel-letorri660x355.jpg" style="width: 100%;" alt="screenshot della home page del sito dell'Albergo Le Torri a Castiglione Falletto.">
                 </div>
           </div>
       </div>
@@ -95,7 +92,7 @@
         <div class="row">
           <div class="col-md-6">
               <div id="img-responsive">
-                  <img src="./assets/img/ecomuseodeiterrazzamenti-660x355.jpg" style="width:100%">
+                  <img src="./assets/img/ecomuseodeiterrazzamenti-660x355.jpg" style="width:100%" alt="mockup della grafica del sito Ecomuseo Dei Terrazzamenti e della vite da me realizzato">
               </div>
           </div>
           <div class="col-md-6">
@@ -113,8 +110,7 @@
               ogni clic, ogni sezione racconta un capitolo di un’epoca passata, enfatizzando il connubio tra la 
               terra e la cultura.
               <br><br>
-              Sito: <a class="link-siti-hotel" href="https://ecomuseodeiterrazzamenti.it/" 
-              target="_blank">ecomuseodeiterrazzamenti.it</a>
+              Sito: <a class="link-siti-hotel" href="https://ecomuseodeiterrazzamenti.it/" rel="noopener" target="_blank">ecomuseodeiterrazzamenti.it</a>
             </p>
             </div>
           </div>
@@ -137,16 +133,16 @@
                di navigazione. La mia firma digitale è stata impressa attraverso il magico mondo dei tag, mentre le 
                traduzioni fluivano senza sforzo grazie all’efficace applicazione Langify.<br><br>
 
-               Alcuni esempi: <a class="link-siti-hotel" href="https://glielementi.it/" target="_blank">glielementi.it</a>
-               - <a class="link-siti-hotel" href="https://diegodallapalma.com/" target="_blank">diegodallapalma.com</a>
-               - <a class="link-siti-hotel" href="https://www.korff.it/" target="_blank">korff.it</a>
+               Alcuni esempi: <a class="link-siti-hotel" href="https://glielementi.it/" rel="noopener" target="_blank">glielementi.it</a>
+               - <a class="link-siti-hotel" href="https://diegodallapalma.com/" rel="noopener" target="_blank">diegodallapalma.com</a>
+               - <a class="link-siti-hotel" href="https://www.korff.it/" rel="noopener" target="_blank">korff.it</a>
             </p>
             </div>
           </div>
           <div class="col-md-6">
             
                 <div id="img-responsive">
-                    <img src="./assets/img/korff-660x355.jpg" width="100%">
+                    <img src="./assets/img/korff-660x355.jpg" width="100%" alt="screenshot della home page del sito e-commerce del brand Korff, il quale vende prodotti di cosmesi e make up">
               </div>
 
             </div>
@@ -158,7 +154,7 @@
         <div class="row">
           <div class="col-md-6">
             <div id="img-responsive">
-              <img src="./assets/img/impresaediledavideprotti-660x355.jpg" width="100%">
+              <img src="./assets/img/impresaediledavideprotti-660x355.jpg" width="100%" alt="mockup relativi alla grafica del sito Impresaediledavideprotti.com">
             </div>
                  
           </div>
@@ -174,8 +170,7 @@
               che ogni visitatore si senta accolto e informato. Gli elementi visivi non sono solo decorazioni, ma 
               un’immersione nella qualità dei progetti completati e nell’attenzione ai dettagli che contraddistingue ogni lavoro.
               <br><br>
-              Sito: <a class="link-siti-hotel" href="https://impresaedileprottidavide.com/" 
-              target="_blank">impresaediledavideprotti.com</a>
+              Sito: <a class="link-siti-hotel" href="https://impresaedileprottidavide.com/" rel="noopener" target="_blank">impresaediledavideprotti.com</a>
             </p>
             </div>
           </div>
