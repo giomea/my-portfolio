@@ -52,11 +52,13 @@ a, a:hover {
 .btn:hover {
 	background-color: #c8133db7;
 }
+
 header{
 	position: sticky;
     top: 0;
     background: #fff;
 	border-bottom: solid 0.5px #b2b3b58b;
+	z-index: 1;
 }
 
 .sezione2, .sezione4 {
@@ -117,7 +119,7 @@ i {
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-	
+
 }
   
   /* Tablet Styles */
