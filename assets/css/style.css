@@ -1,0 +1,140 @@
+h1{ 
+	font-size: 40px; font-weight: bold
+}
+
+h2{
+	font-size: 30px; font-weight: bold
+}
+
+
+h3{ 
+	font-size: 20px; font-weight: bold
+}
+
+
+h3.titolo-sezione{
+	text-align: center 
+}
+
+h4{ 
+	font-size: 17px;
+}
+
+a{
+	 color: #C8133E; 
+}
+
+a:hover{ 
+	color: #c95974 
+}
+
+.site{
+	width: 100%;
+	height: 100%;
+}
+
+div.main-content{
+	padding: 3rem;
+}
+
+div.sezione{
+	padding: 3rem 1rem;
+}
+
+div.sezione:nth-child(odd){
+	background-color: #b2b3b58b
+}
+
+div.sezione:nth-child(even){
+	background-color: #fff
+}
+
+div.sezione-form{
+	min-height: calc(100vh - 107px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.img-personale{
+	margin:auto;
+}
+
+.img_tonda {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.btn-pink{
+	background-color: #C8133E;
+	color: #fff;
+}
+
+.btn-pink:hover{
+	background-color: #c95974;
+	color: #fff;
+}
+
+.sezione2, .sezione4 {
+	background-color: #b2b3b58b;
+}
+
+footer{
+	position:relative;
+	bottom: 0;
+	width: 100%;
+	padding: 1rem;
+	background-color: #C8133E;
+	color: #fff;
+	font-size: 0.8rem;
+	display: flex;
+	align-items:flex-end;
+	justify-content:flex-start;
+}
+
+footer p{
+	margin-bottom:0;
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    /* background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important; */
+    background-color: white !important;
+	border-bottom: 1px solid gray !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link{
+	color: black;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    /* color: rgba(0, 0, 0, .7); */
+	background-color:#c8133db7;
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    background-color: white;
+	color: #c8133db7;
+}
+
+nav .nav-icon .fa-linkedin-square {
+	padding: 0 10px 0 0;
+	font-size: 25px;
+}
+
+nav .nav-icon .fa-instagram {
+	font-size: 25px;
+}
+
+@media only screen and (max-width: 680px) {
+	.presentation{
+		text-align: center;
+	}
+	.sezione-form .personalimage h3{
+		margin-top:20px;
+	}
+	.sezione-form .personalimage h3,
+	.sezione-form .personalimage p{
+		text-align: center;
+	}
+}
