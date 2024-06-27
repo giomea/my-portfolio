@@ -126,6 +126,10 @@ nav .nav-icon .fa-instagram {
 	font-size: 25px;
 }
 
+#img-website {
+	width: 100%;
+}
+
 @media only screen and (max-width: 680px) {
 	.presentation{
 		text-align: center;
