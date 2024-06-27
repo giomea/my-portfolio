@@ -13,7 +13,9 @@
 	color: #C8133E;
 }
 
-
+.red {
+	color: #C8133E;
+}
 /* SEZIONE SKILLS*/
 
 .skills {
@@ -68,6 +70,31 @@
 	transform: translateX(50%) rotate(45deg);
 	border-radius: 2px;
 }
+
+#skill-per-95 {
+	max-width:95%;
+}
+
+#skill-per-90 {
+	max-width:90%;
+}
+
+#skill-per-80 {
+	max-width:80%;
+}
+
+#skill-per-75 {
+	max-width:75%;
+}
+
+#skill-per-70 {
+	max-width:70%;
+}
+
+#skill-per-65 {
+	max-width:65%;
+}
+
 
 @keyframes fillBars {
 	from{
